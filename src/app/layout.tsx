@@ -6,7 +6,7 @@ import Footer from './_components/footer';
 import AnimatedBackground from './_components/animated-background';
 
 export const metadata: Metadata = {
-  title: 'Showcase Sphere',
+  title: 'Projects Square(CDD)',
   description: 'A showcase of projects, contributors, and mentors.',
 };
 
