@@ -87,7 +87,7 @@ export const contributors: Contributor[] = [
   {
     id: 1,
     name: 'Ayushman Patra',
-    role: 'Lead Frontend Engineer',
+    role: 'Web-Developer',
     bio: 'Alina is a passionate frontend developer with a keen eye for design and a love for creating intuitive, performant user interfaces.',
     avatar: getImage('contributor-1')!,
     skills: ['Frontend', 'React', 'Next.js', 'UI/UX'],
