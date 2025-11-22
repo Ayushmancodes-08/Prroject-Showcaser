@@ -40,7 +40,7 @@ export const projects: Project[] = [
   },
   {
     id: 4,
-    title: 'DataWeave',
+    title: 'SkillSwap',
     description: 'A real-time data visualization tool that renders complex network graphs and data flows for large-scale enterprise systems.',
     technologies: ['Vue.js', 'D3.js', 'Node.js', 'WebSocket'],
     image: getImage('project-4')!,
