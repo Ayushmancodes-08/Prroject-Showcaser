@@ -18,7 +18,7 @@ export const projects: Project[] = [
     id: 1,
     title: 'Quizmaster AI',
     description: 'An advanced machine learning platform for predictive analytics, transforming data into actionable insights with unparalleled speed and accuracy.',
-    technologies: ['Next.js', 'Python', 'PyTorch', 'Tailwind CSS'],
+    technologies: ['Next.js', 'Tailwind CSS', 'Supabase'],
     image: getImage('project-1')!,
     contributorIds: [1, 4],
   },
