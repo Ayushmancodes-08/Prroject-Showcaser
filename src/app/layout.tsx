@@ -7,7 +7,7 @@ import AnimatedBackground from './_components/animated-background';
 
 export const metadata: Metadata = {
   title: 'Projects Square(CDD)',
-  description: 'A showcase of projects, contributors, and mentors.',
+  description: 'A collaborative space for developers and designers to showcase their work.',
 };
 
 export default function RootLayout({
