@@ -16,7 +16,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    title: 'QuantumLeap AI',
+    title: 'Quizmaster AI',
     description: 'An advanced machine learning platform for predictive analytics, transforming data into actionable insights with unparalleled speed and accuracy.',
     technologies: ['Next.js', 'Python', 'PyTorch', 'Tailwind CSS'],
     image: getImage('project-1')!,
@@ -24,7 +24,7 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    title: 'ConnectSphere',
+    title: 'CampusConnect ERP',
     description: 'A decentralized social networking application focused on privacy and user data ownership, built on modern web3 technologies.',
     technologies: ['React', 'Solidity', 'GraphQL', 'Firebase'],
     image: getImage('project-2')!,
