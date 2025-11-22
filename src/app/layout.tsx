@@ -6,8 +6,8 @@ import Footer from './_components/footer';
 import AnimatedBackground from './_components/animated-background';
 
 export const metadata: Metadata = {
-  title: 'Projects Square(CDD)',
-  description: 'A collaborative space for developers and designers to showcase their work.',
+  title: 'Project Showcase',
+  description: 'A collaborative space for developers to showcase their work.',
 };
 
 export default function RootLayout({
