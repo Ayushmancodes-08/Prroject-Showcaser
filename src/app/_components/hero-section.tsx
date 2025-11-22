@@ -8,9 +8,11 @@ export default function HeroSection() {
       <div className="container px-4 md:px-6 z-10">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="space-y-4">
-            <h1 className="font-headline text-5xl font-bold tracking-tighter sm:text-6xl md:text-7xl lg:text-8xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
-              Projects Square(CDD)
-            </h1>
+            <blockquote className="font-headline text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl text-foreground/90">
+              "Code is like humor.
+              <br />
+              When you have to explain it, it's bad."
+            </blockquote>
             <p className="text-xl text-muted-foreground md:text-2xl font-light">
               A collaborative space for developers and designers to showcase their work.
             </p>
