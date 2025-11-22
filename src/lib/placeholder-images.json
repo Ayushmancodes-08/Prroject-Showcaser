@@ -53,6 +53,30 @@
       "description": "Professional headshot of a mentor",
       "imageUrl": "https://images.unsplash.com/photo-1685760259914-ee8d2c92d2e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NjM3ODA1Njd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional headshot"
+    },
+    {
+      "id": "video-thumbnail-1",
+      "description": "video thumbnail",
+      "imageUrl": "https://images.unsplash.com/photo-1662466767355-bdda21f993fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx2aWRlbyUyMGFic3RyYWN0fGVufDB8fHx8MTc2Mzc5MzUxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "video abstract"
+    },
+    {
+      "id": "video-thumbnail-2",
+      "description": "video thumbnail",
+      "imageUrl": "https://images.unsplash.com/photo-1754366310288-cb944fc6a56d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx2aWRlbyUyMGFic3RyYWN0fGVufDB8fHx8MTc2Mzc5MzUxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "video abstract"
+    },
+    {
+      "id": "video-thumbnail-3",
+      "description": "video thumbnail",
+      "imageUrl": "https://images.unsplash.com/photo-1662466767584-91854d3b028d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2aWRlbyUyMGFic3RyYWN0fGVufDB8fHx8MTc2Mzc5MzUxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "video abstract"
+    },
+    {
+      "id": "video-thumbnail-4",
+      "description": "video thumbnail",
+      "imageUrl": "https://images.unsplash.com/photo-1602042986607-00418605d4f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx2aWRlbyUyMGFic3RyYWN0fGVufDB8fHx8MTc2Mzc5MzUxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "video abstract"
     }
   ]
 }

@@ -9,8 +9,13 @@ export interface Project {
   id: number;
   title: string;
   description: string;
+  problemStatement: string;
+  solution: string;
   technologies: string[];
   image: ImagePlaceholder;
+  videoThumbnail: ImagePlaceholder;
+  videoUrl: string;
+  liveUrl: string;
   contributorIds: number[];
 }
 
@@ -19,32 +24,52 @@ export const projects: Project[] = [
     id: 1,
     title: 'Quizmaster AI',
     description: 'An advanced machine learning platform for predictive analytics, transforming data into actionable insights with unparalleled speed and accuracy.',
+    problemStatement: 'Educators and trainers struggle to create engaging and personalized quizzes quickly. Existing tools are often time-consuming and lack adaptability to individual learning paces.',
+    solution: 'Quizmaster AI leverages generative AI to create dynamic quizzes from any content source. It offers various question types, difficulty levels, and real-time feedback to create a personalized learning experience.',
     technologies: ['Next.js', 'Tailwind CSS', 'Supabase'],
     image: getImage('project-1')!,
+    videoThumbnail: getImage('video-thumbnail-1')!,
+    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    liveUrl: '#',
     contributorIds: [1, 4],
   },
   {
     id: 2,
     title: 'CampusConnect ERP',
     description: 'A decentralized social networking application focused on privacy and user data ownership, built on modern web3 technologies.',
+    problemStatement: 'University administrative tasks are fragmented across multiple systems, leading to inefficiency and a disjointed experience for students and staff.',
+    solution: 'CampusConnect ERP integrates all aspects of university management—from course registration to financial aid and campus events—into a single, unified platform for a seamless user experience.',
     technologies: ['React', 'Solidity', 'GraphQL', 'Firebase'],
     image: getImage('project-2')!,
+    videoThumbnail: getImage('video-thumbnail-2')!,
+    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    liveUrl: '#',
     contributorIds: [2, 3],
   },
   {
     id: 3,
     title: 'LearnOverse',
     description: 'A futuristic, component-based operating system UI designed for creative professionals, with a focus on workflow and modularity.',
+    problemStatement: 'Creative professionals often find their workflow interrupted by switching between multiple applications. Standard operating systems lack the flexibility needed for a fluid creative process.',
+    solution: 'LearnOverse provides a modular, component-based UI that allows users to build their own workspace. It integrates essential tools for designers and developers into a cohesive, distraction-free environment.',
     technologies: ['Langchain', 'vite', 'Tailwind Css'],
     image: getImage('project-3')!,
+    videoThumbnail: getImage('video-thumbnail-3')!,
+    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    liveUrl: '#',
     contributorIds: [1, 2],
   },
   {
     id: 4,
     title: 'SkillSwap',
     description: 'A real-time data visualization tool that renders complex network graphs and data flows for large-scale enterprise systems.',
+    problemStatement: 'Professionals looking to learn a new skill often face high costs for courses and a lack of practical application. It is difficult to find others to learn with and practice.',
+    solution: 'SkillSwap is a peer-to-peer platform where users can trade skills. An expert in one area can teach a novice, and in return, be taught a skill they wish to learn, creating a collaborative learning ecosystem.',
     technologies: ['Vue.js', 'D3.js', 'Node.js', 'WebSocket'],
     image: getImage('project-4')!,
+    videoThumbnail: getImage('video-thumbnail-4')!,
+    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    liveUrl: '#',
     contributorIds: [3, 4],
   },
 ];
