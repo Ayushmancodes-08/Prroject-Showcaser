@@ -20,9 +20,9 @@ function ProjectCard({ project }: { project: Project }) {
 
   return (
     <div className="p-1 [perspective:1000px]">
-      <Card className="h-full flex flex-col overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 hover:scale-105 hover:[transform:rotateY(5deg)_rotateX(5deg)]">
+      <Card className="h-full flex flex-col overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:[transform:rotateY(5deg)_rotateX(5deg)] border-border/20 bg-card/80 backdrop-blur-sm">
         <CardHeader>
-          <CardTitle className="font-headline">{project.title}</CardTitle>
+          <CardTitle className="font-headline text-2xl">{project.title}</CardTitle>
         </CardHeader>
         <CardContent className="flex-grow p-0">
           <div className="aspect-video relative">
@@ -44,7 +44,7 @@ function ProjectCard({ project }: { project: Project }) {
                 <ul className="space-y-4">
                   {projectContributors.map(contributor => (
                     <li key={contributor.id} className="flex items-center gap-4">
-                      <Avatar>
+                      <Avatar className="h-10 w-10">
                         <AvatarImage src={contributor.avatar.imageUrl} alt={contributor.name} data-ai-hint={contributor.avatar.imageHint}/>
                         <AvatarFallback>{contributor.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
                       </Avatar>
@@ -52,18 +52,18 @@ function ProjectCard({ project }: { project: Project }) {
                         <p className="font-semibold">{contributor.name}</p>
                         <div className="flex flex-wrap gap-1 mt-1">
                            {contributor.skills.map(skill => (
-                             <Badge key={skill} variant="secondary" className="text-xs">{skill}</Badge>
+                             <Badge key={skill} variant="secondary" className="text-xs font-medium">{skill}</Badge>
                            ))}
                         </div>
                       </div>
                        <div className="flex items-center gap-1">
-                        <Button variant="ghost" size="icon" asChild className="h-7 w-7">
+                        <Button variant="ghost" size="icon" asChild className="h-8 w-8 text-muted-foreground hover:text-foreground">
                           <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
                             <Github className="h-4 w-4" />
                             <span className="sr-only">GitHub</span>
                           </Link>
                         </Button>
-                        <Button variant="ghost" size="icon" asChild className="h-7 w-7">
+                        <Button variant="ghost" size="icon" asChild className="h-8 w-8 text-muted-foreground hover:text-foreground">
                           <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                             <Linkedin className="h-4 w-4" />
                             <span className="sr-only">LinkedIn</span>
@@ -77,23 +77,23 @@ function ProjectCard({ project }: { project: Project }) {
             </div>
           </div>
         </CardContent>
-        <CardFooter className="flex justify-between items-end">
+        <CardFooter className="flex justify-between items-center bg-card/50 p-4 mt-auto">
           <div className="flex flex-wrap gap-2">
             {project.technologies.map((tech) => (
-              <Badge key={tech} variant="secondary">{tech}</Badge>
+              <Badge key={tech} variant="outline" className="font-medium">{tech}</Badge>
             ))}
           </div>
           <div className="flex items-center gap-2">
-            <div className="flex -space-x-2">
+            <div className="flex -space-x-3">
               {projectContributors.map(contributor => (
-                <Avatar key={contributor.id} className="h-8 w-8 border-2 border-background hover:scale-110 transition-transform">
+                <Avatar key={contributor.id} className="h-9 w-9 border-2 border-background hover:scale-110 transition-transform">
                   <AvatarImage src={contributor.avatar.imageUrl} alt={contributor.name} data-ai-hint={contributor.avatar.imageHint} />
                   <AvatarFallback>{contributor.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
                 </Avatar>
               ))}
             </div>
-             <Button variant="ghost" size="icon" className="h-8 w-8" onClick={() => setContributorsVisible(!contributorsVisible)}>
-              {contributorsVisible ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+             <Button variant="ghost" size="icon" className="h-9 w-9 rounded-full" onClick={() => setContributorsVisible(!contributorsVisible)}>
+              {contributorsVisible ? <ChevronUp className="h-5 w-5" /> : <ChevronDown className="h-5 w-5" />}
               <span className="sr-only">Toggle Contributors</span>
             </Button>
           </div>
