@@ -1,3 +1,4 @@
+
 import type { ImagePlaceholder } from './placeholder-images';
 import { PlaceHolderImages } from './placeholder-images';
 
@@ -34,7 +35,7 @@ export const projects: Project[] = [
     id: 3,
     title: 'LearnOverse',
     description: 'A futuristic, component-based operating system UI designed for creative professionals, with a focus on workflow and modularity.',
-    technologies: ['SvelteKit', 'TypeScript', 'Electron', 'Vite'],
+    technologies: ['Langchain', 'vite', 'Tailwind Css'],
     image: getImage('project-3')!,
     contributorIds: [1, 2],
   },
