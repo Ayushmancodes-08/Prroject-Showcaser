@@ -86,7 +86,7 @@ export interface Contributor {
 export const contributors: Contributor[] = [
   {
     id: 1,
-    name: 'Alina Petrova',
+    name: 'Ayushman Patra',
     role: 'Lead Frontend Engineer',
     bio: 'Alina is a passionate frontend developer with a keen eye for design and a love for creating intuitive, performant user interfaces.',
     avatar: getImage('contributor-1')!,
