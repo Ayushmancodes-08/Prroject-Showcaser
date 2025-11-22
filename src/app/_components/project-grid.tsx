@@ -6,7 +6,7 @@ import { projects, contributors, Contributor, Project } from '@/lib/data';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Github, Linkedin } from 'lucide-react';
+import { Github, Linkedin, ChevronDown, ChevronUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import { useRouter } from 'next/navigation';
@@ -97,16 +97,6 @@ function ProjectCard({ project }: { project: Project }) {
             ))}
           </div>
           <div className="flex items-center gap-2">
-             <Button 
-                variant="outline" 
-                size="sm"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setContributorsVisible(!contributorsVisible)
-                }}
-              >
-                {contributorsVisible ? 'Hide' : 'View'} Contributors
-              </Button>
             <div className="flex -space-x-3">
               {projectContributors.map(contributor => (
                 <Avatar key={contributor.id} className="h-9 w-9 border-2 border-background hover:scale-110 transition-transform">
@@ -115,6 +105,18 @@ function ProjectCard({ project }: { project: Project }) {
                 </Avatar>
               ))}
             </div>
+             <Button 
+                variant="ghost" 
+                size="icon"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setContributorsVisible(!contributorsVisible)
+                }}
+                className="rounded-full"
+              >
+                {contributorsVisible ? <ChevronUp className="h-5 w-5" /> : <ChevronDown className="h-5 w-5" />}
+                <span className="sr-only">{contributorsVisible ? 'Hide Contributors' : 'View Contributors'}</span>
+              </Button>
           </div>
         </CardFooter>
       </Card>
