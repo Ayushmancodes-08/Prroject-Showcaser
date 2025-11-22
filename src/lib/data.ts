@@ -32,7 +32,7 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    title: 'Nova-OS',
+    title: 'LearnOverse',
     description: 'A futuristic, component-based operating system UI designed for creative professionals, with a focus on workflow and modularity.',
     technologies: ['SvelteKit', 'TypeScript', 'Electron', 'Vite'],
     image: getImage('project-3')!,
