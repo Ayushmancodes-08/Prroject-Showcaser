@@ -30,7 +30,7 @@ export const projects: Project[] = [
     image: getImage('project-1')!,
     videoThumbnail: getImage('video-thumbnail-1')!,
     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-    liveUrl: '#',
+    liveUrl: 'https://quizzer-five-phi.vercel.app/',
     contributorIds: [1, 4],
   },
   {
