@@ -24,7 +24,7 @@ export const projects: Project[] = [
     id: 1,
     title: 'Quizmaster AI',
     description: 'An intelligent assessment platform using AI to create quizzes and prevent cheating with advanced browser monitoring. Built for a seamless experience.',
-    problemStatement: 'Educators and trainers struggle to create engaging and personalized quizzes quickly. Existing tools are often time-consuming and lack adaptability to individual learning paces.',
+    problemStatement: 'In the era of digital education, conducting fair and efficient online assessments remains a significant challenge. Educators often struggle with the time-consuming process of manually creating diverse questions and grading attempts. More critically, maintaining academic integrity is difficult, as students can easily bypass standard interfaces to search for answers, take screenshots, or use automation tools, rendering the results unreliable.',
     solution: 'Quizmaster AI leverages generative AI to create dynamic quizzes from any content source. It offers various question types, difficulty levels, and real-time feedback to create a personalized learning experience.',
     technologies: ['Next.js', 'Tailwind CSS', 'Supabase'],
     image: getImage('project-1')!,
