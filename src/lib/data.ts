@@ -88,7 +88,7 @@ export const contributors: Contributor[] = [
     id: 1,
     name: 'Ayushman Patra',
     role: 'Web-Developer',
-    bio: 'Alina is a passionate frontend developer with a keen eye for design and a love for creating intuitive, performant user interfaces.',
+    bio: 'A passionate developer with a keen eye for design and a love for creating intuitive, performant user interfaces.',
     avatar: getImage('contributor-1')!,
     skills: ['Frontend', 'React', 'Next.js', 'UI/UX'],
   },
@@ -118,8 +118,8 @@ export interface Mentor {
 }
 
 export const mentor: Mentor = {
-  name: 'Dr. Evelyn Reed',
+  name: 'Dr. Alan Grant',
   role: 'Principal Investigator & Mentor',
-  description: "Dr. Reed is a renowned expert in human-computer interaction and artificial intelligence. With over 20 years of experience in the tech industry and academia, she provides invaluable guidance to the team, steering the projects towards innovation and excellence. Her mentorship is pivotal in shaping the team's approach to problem-solving and long-term vision.",
+  description: "Dr. Grant is a renowned expert in human-computer interaction and artificial intelligence. With over 20 years of experience in the tech industry and academia, he provides invaluable guidance to the team, steering the projects towards innovation and excellence. His mentorship is pivotal in shaping the team's approach to problem-solving and long-term vision.",
   image: getImage('mentor-1')!,
 };

@@ -39,7 +39,7 @@
     {
       "id": "contributor-3",
       "description": "Portrait of a project manager",
-      "imageUrl": "https://images.unsplash.com/photo-1679508056709-03167f9c13ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYW5hZ2VyJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYzNzg2MTI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1679508056709-03167f9c13ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYW5hZ2VyJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYzNzg2MTI0fDA&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "manager portrait"
     },
     {
@@ -50,8 +50,8 @@
     },
     {
       "id": "mentor-1",
-      "description": "Professional headshot of a mentor",
-      "imageUrl": "https://images.unsplash.com/photo-1685760259914-ee8d2c92d2e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NjM3ODA1Njd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Professional headshot of a male mentor",
+      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYWxlJTIwcHJvZmVzc2lvbmFsJTIwaGVhZHNob3R8ZW58MHx8fHwxNzYzOTI4NzYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional headshot"
     },
     {
@@ -63,7 +63,7 @@
     {
       "id": "video-thumbnail-2",
       "description": "video thumbnail",
-      "imageUrl": "https://images.unsplash.com/photo-1754366310288-cb944fc6a56d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx2aWRlbyUyMGFic3RyYWN0fGVufDB8fHx8MTc2Mzc5MzUxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1754366310288-cb944fc6a56d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx2aWRlbyUyMGFic3RyYWN0fGVufDB8fHx8MTc2Mzc5MzUxM3ww&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "video abstract"
     },
     {
@@ -75,7 +75,7 @@
     {
       "id": "video-thumbnail-4",
       "description": "video thumbnail",
-      "imageUrl": "https://images.unsplash.com/photo-1602042986607-00418605d4f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx2aWRlbyUyMGFic3RyYWN0fGVufDB8fHx8MTc2Mzc5MzUxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1602042986607-00418605d4f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx2aWRlbyUyMGFic3RyYWN0fGVufDB8fHx8MTc2Mzc5MzUxM3ww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "video abstract"
     }
   ]
