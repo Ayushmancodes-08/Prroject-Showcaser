@@ -19,8 +19,8 @@ function ProjectCard({ project }: { project: Project }) {
   const projectContributors = getProjectContributors(project.contributorIds);
 
   return (
-    <div className="p-1">
-      <Card className="h-full flex flex-col overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+    <div className="p-1 [perspective:1000px]">
+      <Card className="h-full flex flex-col overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 hover:scale-105 hover:[transform:rotateY(5deg)_rotateX(5deg)]">
         <CardHeader>
           <CardTitle className="font-headline">{project.title}</CardTitle>
         </CardHeader>
