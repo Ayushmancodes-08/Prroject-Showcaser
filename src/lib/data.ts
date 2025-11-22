@@ -54,6 +54,7 @@ export interface Contributor {
   role: string;
   bio: string;
   avatar: ImagePlaceholder;
+  skills: string[];
 }
 
 export const contributors: Contributor[] = [
@@ -63,6 +64,7 @@ export const contributors: Contributor[] = [
     role: 'Lead Frontend Engineer',
     bio: 'Alina is a passionate frontend developer with a keen eye for design and a love for creating intuitive, performant user interfaces.',
     avatar: getImage('contributor-1')!,
+    skills: ['Frontend', 'React', 'Next.js', 'UI/UX'],
   },
   {
     id: 2,
@@ -70,6 +72,7 @@ export const contributors: Contributor[] = [
     role: 'UX/UI Designer',
     bio: 'Kenji crafts beautiful and user-centric experiences. He believes that good design is not just how it looks, but how it works.',
     avatar: getImage('contributor-2')!,
+    skills: ['UX Design', 'UI Design', 'Figma', 'Prototyping'],
   },
   {
     id: 3,
@@ -77,6 +80,7 @@ export const contributors: Contributor[] = [
     role: 'Project Manager',
     bio: 'Maria keeps the team on track and ensures that projects are delivered on time and to the highest quality standards.',
     avatar: getImage('contributor-3')!,
+    skills: ['Agile', 'Scrum', 'Jira', 'Product Strategy'],
   },
   {
     id: 4,
@@ -84,6 +88,7 @@ export const contributors: Contributor[] = [
     role: 'Backend & DevOps',
     bio: 'David architects robust and scalable systems, ensuring our applications are always running smoothly and efficiently.',
     avatar: getImage('contributor-4')!,
+    skills: ['Backend', 'DevOps', 'Python', 'AWS'],
   },
 ];
 

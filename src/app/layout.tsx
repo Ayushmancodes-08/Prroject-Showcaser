@@ -25,6 +25,7 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased">
         <AnimatedBackground />
+        <div className="grid-gradient"></div>
         <div className="relative z-10 flex min-h-screen flex-col">
           <NavigationBar />
           <main className="flex-grow">{children}</main>
