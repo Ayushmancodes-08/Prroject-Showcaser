@@ -61,6 +61,34 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                 <ExternalLink className="ml-2 h-5 w-5" />
               </Link>
             </Button>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+              {projectContributors.map(contributor => (
+                <Card key={contributor.id} className="overflow-hidden shadow-lg rounded-xl border-border/20 bg-card/80 backdrop-blur-sm">
+                  <CardContent className="p-6 text-center">
+                    <Avatar className="h-20 w-20 mx-auto mb-4 border-4 border-primary/50">
+                      <AvatarImage src={contributor.avatar.imageUrl} alt={contributor.name} data-ai-hint={contributor.avatar.imageHint} />
+                      <AvatarFallback>{contributor.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                    </Avatar>
+                    <h3 className="text-lg font-bold font-headline">{contributor.name}</h3>
+                    <p className="text-sm text-muted-foreground">{contributor.role}</p>
+                    <div className="flex justify-center gap-2 mt-3">
+                      <Button variant="ghost" size="icon" asChild className="text-muted-foreground hover:text-foreground h-8 w-8">
+                        <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
+                          <Github className="h-4 w-4" />
+                          <span className="sr-only">GitHub</span>
+                        </Link>
+                      </Button>
+                      <Button variant="ghost" size="icon" asChild className="text-muted-foreground hover:text-foreground h-8 w-8">
+                        <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                          <Linkedin className="h-4 w-4" />
+                          <span className="sr-only">LinkedIn</span>
+                        </Link>
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
 
           <div className="space-y-8">
@@ -82,40 +110,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
             </Card>
           </div>
         </div>
-        
-        <section className="mt-16">
-          <h2 className="font-headline text-3xl font-bold text-center mb-8">Contributors</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projectContributors.map(contributor => (
-              <Card key={contributor.id} className="overflow-hidden shadow-lg rounded-xl border-border/20 bg-card/80 backdrop-blur-sm">
-                <CardContent className="p-6 text-center">
-                  <Avatar className="h-24 w-24 mx-auto mb-4 border-4 border-primary/50">
-                    <AvatarImage src={contributor.avatar.imageUrl} alt={contributor.name} data-ai-hint={contributor.avatar.imageHint} />
-                    <AvatarFallback>{contributor.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
-                  </Avatar>
-                  <h3 className="text-xl font-bold font-headline">{contributor.name}</h3>
-                  <p className="text-sm text-muted-foreground">{contributor.role}</p>
-                  <div className="flex justify-center gap-2 mt-4">
-                     <Button variant="ghost" size="icon" asChild className="text-muted-foreground hover:text-foreground">
-                      <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
-                        <Github className="h-5 w-5" />
-                        <span className="sr-only">GitHub</span>
-                      </Link>
-                    </Button>
-                    <Button variant="ghost" size="icon" asChild className="text-muted-foreground hover:text-foreground">
-                      <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                        <Linkedin className="h-5 w-5" />
-                        <span className="sr-only">LinkedIn</span>
-                      </Link>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
       </div>
     </div>
   );
 }
-
