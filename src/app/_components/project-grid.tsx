@@ -36,7 +36,7 @@ function ProjectCard({ project }: { project: Project }) {
             />
           </div>
           <p className="p-6 text-muted-foreground">{project.description}</p>
-          {contributorsVisible && (
+          <div className={`transition-all duration-500 ease-in-out overflow-hidden ${contributorsVisible ? 'max-h-96' : 'max-h-0'}`}>
             <div className="px-6 pb-6">
               <Separator className="mb-4" />
               <h4 className="text-sm font-semibold mb-3 text-foreground/80">Contributors</h4>
@@ -73,7 +73,7 @@ function ProjectCard({ project }: { project: Project }) {
                 ))}
               </ul>
             </div>
-          )}
+          </div>
         </CardContent>
         <CardFooter className="flex justify-between items-end">
           <div className="flex flex-wrap gap-2">
