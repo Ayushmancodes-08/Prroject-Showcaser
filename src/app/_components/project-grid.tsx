@@ -36,42 +36,44 @@ function ProjectCard({ project }: { project: Project }) {
             />
           </div>
           <p className="p-6 text-muted-foreground">{project.description}</p>
-          <div className={`transition-all duration-500 ease-in-out overflow-hidden ${contributorsVisible ? 'max-h-96' : 'max-h-0'}`}>
-            <div className="px-6 pb-6">
-              <Separator className="mb-4" />
-              <h4 className="text-sm font-semibold mb-3 text-foreground/80">Contributors</h4>
-              <ul className="space-y-4">
-                {projectContributors.map(contributor => (
-                  <li key={contributor.id} className="flex items-center gap-4">
-                    <Avatar>
-                      <AvatarImage src={contributor.avatar.imageUrl} alt={contributor.name} data-ai-hint={contributor.avatar.imageHint}/>
-                      <AvatarFallback>{contributor.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
-                    </Avatar>
-                    <div className="flex-grow">
-                      <p className="font-semibold">{contributor.name}</p>
-                      <div className="flex flex-wrap gap-1 mt-1">
-                         {contributor.skills.map(skill => (
-                           <Badge key={skill} variant="secondary" className="text-xs">{skill}</Badge>
-                         ))}
+          <div className={`grid transition-all duration-500 ease-in-out ${contributorsVisible ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
+            <div className="overflow-hidden">
+              <div className="px-6 pb-6 pt-0">
+                <Separator className="mb-4" />
+                <h4 className="text-sm font-semibold mb-3 text-foreground/80">Contributors</h4>
+                <ul className="space-y-4">
+                  {projectContributors.map(contributor => (
+                    <li key={contributor.id} className="flex items-center gap-4">
+                      <Avatar>
+                        <AvatarImage src={contributor.avatar.imageUrl} alt={contributor.name} data-ai-hint={contributor.avatar.imageHint}/>
+                        <AvatarFallback>{contributor.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                      </Avatar>
+                      <div className="flex-grow">
+                        <p className="font-semibold">{contributor.name}</p>
+                        <div className="flex flex-wrap gap-1 mt-1">
+                           {contributor.skills.map(skill => (
+                             <Badge key={skill} variant="secondary" className="text-xs">{skill}</Badge>
+                           ))}
+                        </div>
                       </div>
-                    </div>
-                     <div className="flex items-center gap-1">
-                      <Button variant="ghost" size="icon" asChild className="h-7 w-7">
-                        <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
-                          <Github className="h-4 w-4" />
-                          <span className="sr-only">GitHub</span>
-                        </Link>
-                      </Button>
-                      <Button variant="ghost" size="icon" asChild className="h-7 w-7">
-                        <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                          <Linkedin className="h-4 w-4" />
-                          <span className="sr-only">LinkedIn</span>
-                        </Link>
-                      </Button>
-                    </div>
-                  </li>
-                ))}
-              </ul>
+                       <div className="flex items-center gap-1">
+                        <Button variant="ghost" size="icon" asChild className="h-7 w-7">
+                          <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
+                            <Github className="h-4 w-4" />
+                            <span className="sr-only">GitHub</span>
+                          </Link>
+                        </Button>
+                        <Button variant="ghost" size="icon" asChild className="h-7 w-7">
+                          <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                            <Linkedin className="h-4 w-4" />
+                            <span className="sr-only">LinkedIn</span>
+                          </Link>
+                        </Button>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </CardContent>
