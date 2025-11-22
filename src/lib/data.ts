@@ -23,7 +23,7 @@ export const projects: Project[] = [
   {
     id: 1,
     title: 'Quizmaster AI',
-    description: 'An intelligent assessment platform using AI to create quizzes and prevent cheating with advanced browser monitoring. Built for a seamless experience.',
+    description: 'QuizMasterAI is a next-generation assessment platform built with Next.js 15 and Supabase, designed to streamline the testing process while strictly enforcing academic integrity. By leveraging Google Gemini for intelligent quiz generation and employing advanced browser monitoring techniques, the application prevents cheating through fullscreen lockdowns and focus tracking. It offers a seamless experience for teachers to manage assessments and for students to compete fairly, backed by detailed performance insights and interactive leaderboards.',
     problemStatement: 'In the era of digital education, conducting fair and efficient online assessments remains a significant challenge. Educators often struggle with the time-consuming process of manually creating diverse questions and grading attempts. More critically, maintaining academic integrity is difficult, as students can easily bypass standard interfaces to search for answers, take screenshots, or use automation tools, rendering the results unreliable.',
     solution: 'QuizMasterAI offers a secure, AI-powered assessment platform using Google Gemini to generate quizzes instantly. Its Anti-Cheat System includes browser lockdown and tab-switching detection to ensure fairness. With real-time analytics and leaderboards, it creates a trustworthy environment for remote evaluations.',
     technologies: ['Next.js', 'Tailwind CSS', 'Supabase'],
@@ -31,7 +31,7 @@ export const projects: Project[] = [
     videoThumbnail: getImage('video-thumbnail-1')!,
     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     liveUrl: 'https://quizzer-five-phi.vercel.app/',
-    contributorIds: [1, 4],
+    contributorIds: [1],
   },
   {
     id: 2,
@@ -70,7 +70,7 @@ export const projects: Project[] = [
     videoThumbnail: getImage('video-thumbnail-4')!,
     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     liveUrl: '#',
-    contributorIds: [3, 4],
+    contributorIds: [3],
   },
 ];
 
@@ -107,14 +107,6 @@ export const contributors: Contributor[] = [
     bio: 'Maria keeps the team on track and ensures that projects are delivered on time and to the highest quality standards.',
     avatar: getImage('contributor-3')!,
     skills: ['Agile', 'Scrum', 'Jira', 'Product Strategy'],
-  },
-  {
-    id: 4,
-    name: 'David Chen',
-    role: 'Backend & DevOps',
-    bio: 'David architects robust and scalable systems, ensuring our applications are always running smoothly and efficiently.',
-    avatar: getImage('contributor-4')!,
-    skills: ['Backend', 'DevOps', 'Python', 'AWS'],
   },
 ];
 
