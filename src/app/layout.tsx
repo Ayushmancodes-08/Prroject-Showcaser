@@ -6,8 +6,8 @@ import Footer from './_components/footer';
 import AnimatedBackground from './_components/animated-background';
 
 export const metadata: Metadata = {
-  title: 'Project Showcase',
-  description: 'A collaborative space for developers to showcase their work.',
+  title: 'CDD Projects',
+  description: 'A showcase of innovative projects from CDD.',
 };
 
 export default function RootLayout({

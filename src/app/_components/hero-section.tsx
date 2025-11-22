@@ -14,7 +14,7 @@ export default function HeroSection() {
               When you have to explain it, it's bad."
             </blockquote>
             <p className="text-xl text-muted-foreground md:text-2xl font-light">
-              A collaborative space for developers and designers to showcase their work.
+              A showcase of innovative projects from CDD.
             </p>
           </div>
           <Button asChild size="lg" className="rounded-full text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-shadow">
