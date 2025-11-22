@@ -10,6 +10,7 @@ export interface Project {
   description: string;
   technologies: string[];
   image: ImagePlaceholder;
+  contributorIds: number[];
 }
 
 export const projects: Project[] = [
@@ -19,6 +20,7 @@ export const projects: Project[] = [
     description: 'An advanced machine learning platform for predictive analytics, transforming data into actionable insights with unparalleled speed and accuracy.',
     technologies: ['Next.js', 'Python', 'PyTorch', 'Tailwind CSS'],
     image: getImage('project-1')!,
+    contributorIds: [1, 4],
   },
   {
     id: 2,
@@ -26,6 +28,7 @@ export const projects: Project[] = [
     description: 'A decentralized social networking application focused on privacy and user data ownership, built on modern web3 technologies.',
     technologies: ['React', 'Solidity', 'GraphQL', 'Firebase'],
     image: getImage('project-2')!,
+    contributorIds: [2, 3],
   },
   {
     id: 3,
@@ -33,6 +36,7 @@ export const projects: Project[] = [
     description: 'A futuristic, component-based operating system UI designed for creative professionals, with a focus on workflow and modularity.',
     technologies: ['SvelteKit', 'TypeScript', 'Electron', 'Vite'],
     image: getImage('project-3')!,
+    contributorIds: [1, 2],
   },
   {
     id: 4,
@@ -40,6 +44,7 @@ export const projects: Project[] = [
     description: 'A real-time data visualization tool that renders complex network graphs and data flows for large-scale enterprise systems.',
     technologies: ['Vue.js', 'D3.js', 'Node.js', 'WebSocket'],
     image: getImage('project-4')!,
+    contributorIds: [3, 4],
   },
 ];
 
