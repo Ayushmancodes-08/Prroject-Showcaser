@@ -1,5 +1,4 @@
 import ProjectGrid from './_components/project-grid';
-import ContributorDisplay from './_components/contributor-display';
 import MentorSpotlight from './_components/mentor-spotlight';
 import HeroSection from './_components/hero-section';
 
@@ -11,9 +10,6 @@ export default function Home() {
         <div className="space-y-24">
           <section id="projects" className="scroll-mt-20">
             <ProjectGrid />
-          </section>
-          <section id="contributors" className="scroll-mt-20">
-            <ContributorDisplay />
           </section>
           <section id="mentor" className="scroll-mt-20">
             <MentorSpotlight />

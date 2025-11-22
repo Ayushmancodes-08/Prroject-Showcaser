@@ -4,7 +4,6 @@ import { Orbit } from 'lucide-react';
 export default function NavigationBar() {
   const navItems = [
     { name: 'Projects', href: '#projects' },
-    { name: 'Contributors', href: '#contributors' },
     { name: 'Mentor', href: '#mentor' },
   ];
 
