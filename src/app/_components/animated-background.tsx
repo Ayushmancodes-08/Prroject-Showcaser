@@ -1,3 +1,3 @@
 export default function AnimatedBackground() {
-  return <div className="animated-gradient-bg" />;
+  return <div className="animated-background" />;
 }

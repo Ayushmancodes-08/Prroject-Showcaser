@@ -70,24 +70,31 @@
 }
 
 @layer utilities {
-  .animated-gradient-bg {
+  .animated-background {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: -10;
-    --color-1: hsl(210, 40%, 95%);
-    --color-2: hsl(207, 90%, 90%);
-    --color-3: hsl(210, 50%, 98%);
-    background: linear-gradient(300deg, var(--color-1), var(--color-2), var(--color-3));
-    background-size: 180% 180%;
-    animation: gradient-animation 18s ease infinite;
+    background-size: 400% 400%;
+    background-image: linear-gradient(
+      -45deg, 
+      hsl(210 40% 95%), 
+      hsl(207 90% 90%), 
+      hsl(210 50% 98%), 
+      hsl(190 80% 85%)
+    );
+    animation: gradient-animation 15s ease infinite;
   }
-  .dark .animated-gradient-bg {
-    --color-1: hsl(222, 47%, 10%);
-    --color-2: hsl(217, 40%, 12%);
-    --color-3: hsl(220, 45%, 9%);
+  .dark .animated-background {
+    background-image: linear-gradient(
+      -45deg, 
+      hsl(222 47% 10%), 
+      hsl(217 40% 12%), 
+      hsl(220 45% 9%), 
+      hsl(210 35% 15%)
+    );
   }
 
   @keyframes gradient-animation {
